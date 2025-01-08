@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    gap: 20px; /* Space between blocks */
+    justify-content: center; /* Align blocks horizontally */
+}
+
+.block {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out content */
+    height: 300px;
+    width: 300px;
+    border: solid 4px #000000; /* Bold border for emphasis */
+    background-color: #f9f9ff; /* Soft background for better aesthetics */
+    padding: 20px; /* Consolidated padding */
+    text-align: justify;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.block:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.block h1 {
+    color: rgb(117, 2, 143); /* Vibrant color for headings */
+    text-align: left;
+    font-size: 1.5em; /* Adjusted font size for balance */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+.block h3 {
+    color: rgb(0, 0, 0); /* Vibrant color for headings */
+    text-align: left;
+    font-size: 14px; /* Adjusted font size for balance */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.block p {
+    flex-grow: 1; /* Fills remaining space for consistent alignment */
+    margin-top: 10px;
+    margin-bottom: 10px; /* Adds space between text and link */
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+.block a {
+    color: #0078d7; /* Updated blue shade for links */
+    font-size: 17px;
+    font-family: 'Arial', sans-serif; /* Consistent font style */
+    text-align: left;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.block a:hover {
+    color: #0056a6; /* Darker shade on hover */
+    text-decoration: underline; /* Underline on hover for better usability */
+}

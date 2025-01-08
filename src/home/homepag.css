@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Rectangle Styles */
+.rectangle {
+  width: 100%; /* Ensure it fits within the screen */
+  padding: 20px;
+  color: white;
+  font-size: 40px;
+  background: linear-gradient(to right, #917CE5, #957EF2, #543DAF, #30216C);
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center; /* Center align within the container */
+  margin: 0 auto;
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+@media (max-width: 768px) {
+  .rectangle {
+    font-size: 30px; /* Adjust font size for tablets */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rectangle {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    padding: 10px;
+  }
+}
+
+/* Foundation Header */
+.foundation-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.foundation-logo {
+  width: 150px; /* Set initial logo size */
+  height: auto;
+  margin-right: 10px;
+}
+
+.foundation-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+}
+
+.green-text {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.black-text {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .foundation-header {
+    flex-direction: column; /* Stack image and text */
+    text-align: center;
+  }
+
+  .foundation-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .foundation-text {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foundation-logo {
+    width: 80px;
+  }
+
+  .foundation-text {
+    font-size: 24px;
+  }
+}
+
+/* Learn More Button */
+.learn-more-button {
+  background: linear-gradient(to right, #30216C, #543DAF, #957EF2);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #957EF2, #543daf, #30216C);
+}
+
+/* Vision and Mission Section */
+.vision-mission-container {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  margin: 40px auto;
+  max-width: 90%;
+  padding: 20px;
+  background: linear-gradient(to right, #543DAF, #957EF2, #917CE5, #30216C);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.text-content {
+  flex: 1; /* Make the text take up available space */
+  padding: 20px;
+  min-width: 250px; /* Prevent content from collapsing too much */
+}
+
+.text-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Image Content */
+.image-content {
+  flex: 0.5; /* Adjust the size of the image section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-width: 200px; /* Prevent the image section from collapsing */
+}
+
+.vision-image, .mission-image {
+  width: 70%;
+   /* Constrain image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+
+}
+
+@media (max-width: 768px) {
+  .vision-mission-container {
+    flex-direction: column; /* Stack sections for tablets */
+  }
+
+  .text-content, .image-content {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .image-content {
+    margin-top: 20px;
+  }
+
+  .vision-image, .mission-image {
+    max-width: 120px; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h2 {
+    font-size: 20px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .vision-image, .mission-image {
+    max-width: 50%; /* Reduce image size further */
+  }
+}.impacts {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+  gap: 20px; /* Adds spacing between the components */
+  justify-content: center; /* Centers the components horizontally */
+  align-items: center; /* Aligns the components vertically */
+  margin: 20px; /* Adds some spacing around the container */
+  text-align: center; /* Centers the heading */
+}
+
+.impacts h1 {
+  width: 100%; /* Ensures the heading spans the full width */
+  margin-bottom: 20px; /* Adds spacing below the heading */
+  font-size: 24px; /* Adjust font size for the heading */
+  font-weight: bold;
+  color: #333; /* A neutral color for the heading */
+}
+.impacts img{
+  height: auto;
+  width: 80%;
+}
+.impacts-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content */
+  max-width: 70%; /* Limit block width */
+  margin: 20px auto; /* Center block with spacing */
+  padding: 20px;
+  border: 2px solid #000; /* Black border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9ff; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text */
+}
+
+.impacts-1 img {
+  width: 300px; /* Adjust image size */
+  height: 100%;
+  /* Circular image */
+  object-fit: cover;
+  margin-bottom: 10px; /* Spacing below image */
+}
+
+.trainer-info h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark text */
+}
+
+.trainer-info p {
+  margin: 5px 0 15px; /* Space around name and title */
+  font-size: 24px;
+  color: #555; /* Subtle gray text */
+}
+
+.impacts-1 p {
+  font-size: 22px;
+  color: #333;
+  margin: 10px 0; /* Space above and below text */
+  text-align: justify; /* Justify paragraph */
+  position: relative;
+}
+
+.trainer-role {
+  font-weight: bold;
+  color: #543daf; /* Purple color for role */
+  margin-left: 10px; /* Space from content */
+}
+
+.read-more {
+  margin-top: 30px;
+  bottom: 10px;
+  right: 10px; /* Align to bottom-right with some space */
+  padding: 10px 20px; /* Larger padding for a more prominent button */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Bold text for emphasis */
+  border: 2px solid #543daf; /* Border color matching the text */
+  background-color: transparent; /* Transparent background */
+  color: #543daf; /* Purple text */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Slightly spaced-out letters */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.read-more:hover {
+  background-color: #543daf; /* Purple background on hover */
+  color: #fff; /* White text on hover */
+  box-shadow: 0 6px 12px rgba(84, 61, 175, 0.3); /* Soft shadow effect on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+.read-more:active {
+  transform: translateY(1px); /* Button appears pressed on click */
+}
+
