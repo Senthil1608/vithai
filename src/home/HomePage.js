@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NavigationBar from "../components/NavigationBar";
 import '../home/homepag.css';
 import '../components/Footer';
@@ -31,7 +32,7 @@ const HomePage = () => {
       <br />
       <br />
 
-      <button className="learn-more-button">Learn More</button>
+      <a href="/about"><button className="learn-more-button">Learn More</button></a>
 
       {/* Vision and Mission Section */}
       <div className="vision-mission-container">
@@ -72,7 +73,7 @@ const HomePage = () => {
       <Block text1="Founder’s Message" text2="Born from Passion, Fueled by Purpose" text3="What began as a spark in the mind of a budding engineering undergraduate quickly evolved into a selfless mission.
 
  " text4="Read More"/>
-      <Block text1="Compile Plus" text2="Empowering Education, Inspiring Growth" text3="A special fundraising event with a clear mission: to offer top-tier programming workshops that promote education and mutual growth.  " text4="Read More"/>
+      <Block text1="Compile Plus" text2="Empowering Education, Inspiring Growth" text3="A special fundraising event with a clear mission: to offer top-tier programming workshops that promote education and mutual growth.  " text4="about"/>
       <Block text1="Skill Up  1.0" text2="Empowering Careers through Skill and Inspiration" text3="This exciting 10-week course Featuring comprehensive placement training, along with inspiring guest lectures from industry leaders " text4="Read More"/>
       </div>
       <div className="impacts-1">

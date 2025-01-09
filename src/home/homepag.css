@@ -109,7 +109,10 @@
   transform: scale(1.1);
   background: linear-gradient(to right, #957EF2, #543daf, #30216C);
 }
-
+.learn-more-button a{
+  color: white;
+  text-decoration: none;
+}
 /* Vision and Mission Section */
 .vision-mission-container {
   display: flex;

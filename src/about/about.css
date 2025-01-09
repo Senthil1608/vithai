@@ -1,0 +1,132 @@
+
+.story {
+    color: black;
+    text-align: justify;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.story h1 {
+    color: rgb(59, 52, 52);
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.story h2 {
+    color: rgb(144, 1, 196);
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story div {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.story img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.story button {
+    background: linear-gradient(to right, #30216C, #543DAF, #957EF2);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.story button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #957EF2, #543daf, #30216C);
+}
+
+.story a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .split {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .story img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .story h1 {
+        font-size: 20px;
+    }
+
+    .story h2 {
+        font-size: 16px;
+    }
+
+    .story div {
+        font-size: 16px;
+    }
+
+    .story button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .story h1 {
+        font-size: 18px;
+    }
+
+    .story h2 {
+        font-size: 14px;
+    }
+
+    .story div {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .story button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
