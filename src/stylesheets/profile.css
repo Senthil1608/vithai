@@ -1,0 +1,85 @@
+/* Profile container */
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: #980ef4;
+}
+.profile {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Lighter border for a modern look */
+    border-radius: 12px; /* More pronounced rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Slightly larger padding for comfort */
+    width: 240px; /* Slightly larger width */
+    height: auto; /* Adjusted height for a more balanced look */
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-sizing: border-box; /* Ensure padding is included in dimensions */
+    margin-bottom: 20px;
+}
+
+/* Hover effect for profile card */
+.profile:hover {
+    transform: translateY(-5px) scale(1.05); /* Slight lift and zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Profile image */
+.profile-image {
+    width: 120px; /* Compact size for profile image */
+    height: auto;
+    object-fit: cover; /* Ensure image fits without distortion */
+    margin-bottom: 12px; /* Space below the image */
+}
+
+
+
+/* Profile name */
+.profile-name {
+    font-size: 18px; /* Slightly larger font size for emphasis */
+    font-weight: bold; /* Bold for emphasis */
+    color: #333333; /* Darker text for better contrast */
+    margin: 0; /* Remove default margin */
+    margin-bottom: 8px; /* Space below the name */
+    text-transform: uppercase; /* All caps for a more polished look */
+}
+
+/* Profile position */
+.profile-position {
+    font-size: 14px; /* Slightly larger text for better readability */
+    color: #777777; /* Soft gray for a clean look */
+    margin: 0; /* Remove default margin */
+    margin-bottom: 12px; /* Space below the position */
+    font-style: italic; /* Italic for emphasis */
+}
+
+/* Profile link (button style) */
+.profile-link {
+    font-size: 14px; /* Slightly larger font size for readability */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    background-color: #000000; /* Black background for button-like appearance */
+    font-weight: 600; /* Semi-bold for emphasis */
+    padding: 8px 16px; /* Adjusted padding for balance */
+    border: none; /* No border */
+    border-radius: 6px; /* More rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    letter-spacing: 0.5px; /* Slight letter spacing for a more polished look */
+    margin-bottom: 70px;
+}
+
+/* Hover effect for profile link */
+.profile-link:hover {
+    background-color: #444444; /* Slightly lighter black on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Focus effect for accessibility */
+.profile-link:focus {
+    outline: 2px solid #ffffff; /* White outline for accessibility */
+    outline-offset: 2px; /* Spaced outline for visibility */
+}

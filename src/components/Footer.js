@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaEnvelope, FaPhone, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaPhoneAlt, FaInstagram } from "react-icons/fa";
 import "../stylesheets/footer.css";
 
 const Footer = () => {
@@ -26,10 +26,10 @@ const Footer = () => {
             <FaEnvelope />
           </a>
           <a
-            href="tel:+9092573000"
+            href="tel:+91 9092573000"
             className="social-icon"
           >
-            <FaPhone />
+            <FaPhoneAlt />
           </a>
           <a
             href="https://www.instagram.com/vithai17_foundation/"
