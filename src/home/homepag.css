@@ -226,77 +226,107 @@
 .impacts-1 {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center-align content */
-  max-width: 70%; /* Limit block width */
-  margin: 20px auto; /* Center block with spacing */
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 20px;
   padding: 20px;
-  border: 2px solid #000; /* Black border */
-  border-radius: 10px; /* Rounded corners */
-  background-color: #f9f9ff; /* Light background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  text-align: center; /* Center-align text */
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impacts-1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .impacts-1 img {
-  width: 300px; /* Adjust image size */
-  height: 100%;
-  /* Circular image */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px; /* Spacing below image */
+  border: 2px solid #30216C;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .trainer-info h4 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333; /* Dark text */
+  font-size: 20px;
+  color: #30216C;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .trainer-info p {
-  margin: 5px 0 15px; /* Space around name and title */
-  font-size: 24px;
-  color: #555; /* Subtle gray text */
+  font-size: 16px;
+  color: #4A4A8E;
+  margin-bottom: 15px;
 }
 
 .impacts-1 p {
-  font-size: 22px;
-  color: #333;
-  margin: 10px 0; /* Space above and below text */
-  text-align: justify; /* Justify paragraph */
-  position: relative;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .trainer-role {
-  font-weight: bold;
-  color: #543daf; /* Purple color for role */
-  margin-left: 10px; /* Space from content */
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #543DAF;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .read-more {
-  margin-top: 30px;
-  bottom: 10px;
-  right: 10px; /* Align to bottom-right with some space */
-  padding: 10px 20px; /* Larger padding for a more prominent button */
-  font-size: 16px; /* Adjust font size */
-  font-weight: bold; /* Bold text for emphasis */
-  border: 2px solid #543daf; /* Border color matching the text */
-  background-color: transparent; /* Transparent background */
-  color: #543daf; /* Purple text */
-  border-radius: 25px; /* Rounded corners */
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #543DAF, #30216C);
+  border: none;
+  border-radius: 15px;
   cursor: pointer;
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 1px; /* Slightly spaced-out letters */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .read-more:hover {
-  background-color: #543daf; /* Purple background on hover */
-  color: #fff; /* White text on hover */
-  box-shadow: 0 6px 12px rgba(84, 61, 175, 0.3); /* Soft shadow effect on hover */
-  transform: translateY(-3px); /* Slight lift effect */
+  background: linear-gradient(135deg, #30216C, #543DAF);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.read-more:active {
-  transform: translateY(1px); /* Button appears pressed on click */
+@media (max-width: 768px) {
+  .impacts-1 {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .impacts-1 img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .trainer-info h4 {
+      font-size: 18px;
+  }
+
+  .trainer-info p, .impacts-1 p {
+      font-size: 14px;
+  }
+
+  .read-more {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
 }
 

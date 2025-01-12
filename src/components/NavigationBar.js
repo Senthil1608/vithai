@@ -12,9 +12,7 @@ const NavigationBar = () => {
 
   return (
     <div className="navbar-container">
-        <div className="bar">
 
-        </div> 
       <div className="navbar">
         {/* Logo/Title */}
         <div className="navbar-title">

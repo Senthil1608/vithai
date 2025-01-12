@@ -10,6 +10,7 @@ import tharushi from "../boardmemebers/tharushi.png"
 import kathir from "../boardmemebers/kathir.png";
 import bala from "../boardmemebers/adithya.png";
 import akash from "../boardmemebers/akash.png";
+import photo1 from "./photo1.png";
 const About =() =>{
     return(
         <div>
@@ -37,6 +38,7 @@ const About =() =>{
                                  
                     </div>
                     <div>
+                    <h3>"Every little smile can touch"</h3>    
                     <h1>P S Senthil srinivas, Founder</h1>    
                     <p>Senthil is a dedicated Electronics and Communication Engineering undergraduate with a strong passion for societal impact. Currently interning at HCL Tech, he brings both technical expertise and a deep commitment to education. Teaching has always been his calling, and while he chose to pursue engineering, his love for teaching never wavered. This drive led him to establish Vithai-17 Foundation, a platform through which he channels his enthusiasm for empowering others through knowledge and guidance. Senthil’s journey reflects a unique blend of technical skill and an unwavering spirit to make a difference in society, inspiring others to reach their fullest potential.</p>
                     <a href="https://senthilsrinivas.vercel.app/"><button>Know More</button></a>
@@ -55,11 +57,11 @@ const About =() =>{
                             <Profile image={tharushi}
                     name={"Tharushi S S"}
                     position={"Strategist"}
-                    link={"hi"} />
+                    link={"https://www.linkedin.com/in/tharushi-s-s"} />
                             <Profile image={kathir}
                     name={"Kathiravan S"}
                     position={"Secretary"}
-                    link={"hi"} />
+                    link={"https://www.linkedin.com/in/kathiravan-s-258902205/"} />
                           
                 </div>
                 <div className="disp">
@@ -67,7 +69,7 @@ const About =() =>{
                     <Profile image={akash}
                     name={"Akash N"}
                     position={"Joint Director"}
-                    link={"hi"} />
+                    link={"https://www.linkedin.com/in/akash-narayanan-656b8924b/"} />
                             <Profile image={bala}
                     name={"Shree Bala Aadithya B"}
                     position={"Treasurer"}
@@ -75,10 +77,19 @@ const About =() =>{
                             <Profile image={bala}
                     name={"Saravanan S"}
                     position={"Director"}
-                    link={"hi"} />
+                    link={"https://www.linkedin.com/in/saravanan-s-366a8b218/"} />
                           
                 </div>
-           
+                <div className="joinus">
+                    <div>
+                        <h1>Willing to volunteer ? </h1>
+                        <p>There's no perfect time to start making a difference. Explore our volunteer community options below and join us on the journey to create positive change.</p>
+                        <a>Join US</a>
+                    </div>
+                    <div>
+                        <img src={photo1} ></img>
+                    </div>    
+                </div>
        
   
             <Footer />

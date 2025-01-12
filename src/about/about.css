@@ -39,7 +39,12 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.split h3{
+    color:#543DAF;
+    font-size: 40px;
+    text-align: center;
 
+}
 .story img {
     height: auto;
     width: 100%;
@@ -164,3 +169,89 @@
     padding: 20px; /* Optional: Add some padding around the container */
 }
 
+.joinus {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 80%;
+    border: 3px solid black;
+    background: linear-gradient(135deg, #ffffff, #e0e0ff);
+    border-radius: 30px;
+    align-items: center;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
+}
+
+.joinus h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #30216C;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.joinus p {
+    font-size: 18px;
+    color: #4A4A8E;
+    text-align: justify;
+    line-height: 1.6;
+    width: 90%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.joinus img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joinus img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.joinus a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(135deg, #543DAF, #30216C);
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    margin: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joinus a:hover {
+    background: linear-gradient(135deg, #30216C, #543DAF);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .joinus {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .joinus img {
+        max-width: 100%;
+        padding: 0;
+    }
+    .joinus a{
+        margin: 0;
+    }
+}
