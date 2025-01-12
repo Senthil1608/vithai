@@ -1,15 +1,11 @@
 /* Profile container */
-h1{
-    text-align: center;
-    font-size: 30px;
-    color: #980ef4;
-}
+
 .profile {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     background-color: #ffffff; /* White background */
-    border: 2px solid #000000; /* Lighter border for a modern look */
+    border: 2px solid #388e3c; /* Lighter border for a modern look */
     border-radius: 12px; /* More pronounced rounded corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     padding: 20px; /* Slightly larger padding for comfort */
@@ -61,7 +57,7 @@ h1{
     font-size: 14px; /* Slightly larger font size for readability */
     color: #ffffff; /* White text */
     text-decoration: none; /* Remove underline */
-    background-color: #000000; /* Black background for button-like appearance */
+    background-color: #388e3c; /* Black background for button-like appearance */
     font-weight: 600; /* Semi-bold for emphasis */
     padding: 8px 16px; /* Adjusted padding for balance */
     border: none; /* No border */

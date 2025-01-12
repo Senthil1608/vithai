@@ -1,7 +1,8 @@
 .impact-box {
     width: 100px;
     height: 100px;
-    background: linear-gradient(to right, #957EF2, #543DAF, #30216C);
+    
+    background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
     display: flex;
     
     justify-content: center;
@@ -22,7 +23,7 @@
     width: 60px;
     height: 60px;
     background-color: white;
-    border: solid #543DAF 2px;
+    border: solid #388e3c 2px;
     position: absolute;
     bottom: -10px; /* Overlapping effect */
     left: 50%;
@@ -35,7 +36,7 @@
   }
   
   .text2 {
-    color: rgb(0, 15, 149);
+    color: #388e3c(0, 15, 149);
     font-size: 25px;
     font-weight: bold;
     text-align: center;

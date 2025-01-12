@@ -1,0 +1,42 @@
+/* contact.css */
+
+/* Container for the Contact Us page */
+.veeradisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f7fafc;
+}
+
+/* Spacing and alignment for child Contactblock components */
+.veeradisplay > div {
+    flex: 1 1 calc(30% - 20px);
+    min-width: 280px;
+    max-width: 350px;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .veeradisplay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .veeradisplay > div {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .veeradisplay {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .veeradisplay > div {
+        max-width: 100%;
+    }
+}

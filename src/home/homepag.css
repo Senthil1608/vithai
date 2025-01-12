@@ -11,7 +11,9 @@
   padding: 20px;
   color: white;
   font-size: 40px;
-  background: linear-gradient(to right, #917CE5, #957EF2, #543DAF, #30216C);
+  /* background: linear-gradient(to right, #917CE5, #957EF2, #543DAF, #30216C); */
+  background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
+
   display: flex;
   justify-content: center; /* Center text horizontally */
   align-items: center; /* Center text vertically */
@@ -90,29 +92,30 @@
 }
 
 /* Learn More Button */
-.learn-more-button {
-  background: linear-gradient(to right, #30216C, #543DAF, #957EF2);
+.link-button {
+  background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
   color: white;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none ;
   padding: 12px 24px;
   border: none;
   border-radius: 25px;
+  width: 200px;
+  margin: auto;
   cursor: pointer;
+  text-align: center;
   transition: transform 0.3s ease, background 0.3s ease;
   display: block;
-  margin: 20px auto;
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.learn-more-button:hover {
+.link-button:hover {
   transform: scale(1.1);
-  background: linear-gradient(to right, #957EF2, #543daf, #30216C);
+  background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
 }
-.learn-more-button a{
-  color: white;
-  text-decoration: none;
-}
+
 /* Vision and Mission Section */
 .vision-mission-container {
   display: flex;
@@ -120,7 +123,7 @@
   margin: 40px auto;
   max-width: 90%;
   padding: 20px;
-  background: linear-gradient(to right, #543DAF, #957EF2, #917CE5, #30216C);
+  background:linear-gradient(to right,#388e3c,#4a934e,#618c63);
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -249,21 +252,21 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #30216C;
+  border: 2px solid linear-gradient(to right,#388e3c,#4a934e,#618c63);
   margin-bottom: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .trainer-info h4 {
   font-size: 20px;
-  color: #30216C;
+  color: #388e3c;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .trainer-info p {
   font-size: 16px;
-  color: #4A4A8E;
+  color: #15861b;
   margin-bottom: 15px;
 }
 
@@ -279,7 +282,7 @@
   display: block;
   margin-top: 10px;
   font-size: 14px;
-  color: #543DAF;
+  color: #036b08;
   font-style: italic;
   font-weight: 600;
 }
@@ -290,7 +293,7 @@
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background: linear-gradient(135deg, #543DAF, #30216C);
+  background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -301,7 +304,7 @@
 }
 
 .read-more:hover {
-  background: linear-gradient(135deg, #30216C, #543DAF);
+  background:linear-gradient(to right,#388e3c,#4a934e,#618c63);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 

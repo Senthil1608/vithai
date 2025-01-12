@@ -17,7 +17,7 @@
 }
 
 .story h2 {
-    color: rgb(144, 1, 196);
+    color: #388e3c;
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -40,7 +40,7 @@
     flex-wrap: wrap;
 }
 .split h3{
-    color:#543DAF;
+    color:#388e3c;
     font-size: 40px;
     text-align: center;
 
@@ -54,7 +54,7 @@
 }
 
 .story button {
-    background: linear-gradient(to right, #30216C, #543DAF, #957EF2);
+    background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -70,7 +70,7 @@
 
 .story button:hover {
     transform: scale(1.1);
-    background: linear-gradient(to right, #957EF2, #543daf, #30216C);
+    background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
 }
 
 .story a {
@@ -153,6 +153,11 @@
     .story div, .story h1, .story h2 {
         padding: 0 10px; /* Add padding to prevent text from touching the edges */
     }
+    h1{
+        text-align: center;
+        font-size: 30px;
+        color: #388e3c;
+    }
 }
 
 .line{
@@ -175,7 +180,7 @@
     height: auto;
     width: 80%;
     border: 3px solid black;
-    background: linear-gradient(135deg, #ffffff, #e0e0ff);
+    background: linear-gradient(135deg, #f5f5f5, #e3f2fd);
     border-radius: 30px;
     align-items: center;
     margin: 40px auto;
@@ -188,7 +193,7 @@
 .joinus h1 {
     text-align: center;
     font-size: 48px;
-    color: #30216C;
+    color: #388e3c;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -196,7 +201,7 @@
 
 .joinus p {
     font-size: 18px;
-    color: #4A4A8E;
+    color: #388e3c;
     text-align: justify;
     line-height: 1.6;
     width: 90%;
@@ -224,7 +229,7 @@
     padding: 15px 30px;
     font-size: 18px;
     color: white;
-    background: linear-gradient(135deg, #543DAF, #30216C);
+    background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
     border: none;
     border-radius: 25px;
     text-align: center;
@@ -237,7 +242,7 @@
 }
 
 .joinus a:hover {
-    background: linear-gradient(135deg, #30216C, #543DAF);
+    background: linear-gradient(to right,#388e3c,#4a934e,#618c63);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -254,4 +259,14 @@
     .joinus a{
         margin: 0;
     }
+    h1{
+        text-align: center;
+        font-size: 30px;
+        color: #388e3c;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: #388e3c;
 }

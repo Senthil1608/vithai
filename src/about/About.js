@@ -11,6 +11,7 @@ import kathir from "../boardmemebers/kathir.png";
 import bala from "../boardmemebers/adithya.png";
 import akash from "../boardmemebers/akash.png";
 import photo1 from "./photo1.png";
+import sara from "../boardmemebers/sara.png";
 const About =() =>{
     return(
         <div>
@@ -53,7 +54,7 @@ const About =() =>{
                     <Profile image={vishalImage}
                     name={"Vishal M"}
                     position={"Co-founder"}
-                    link={"hi"} />
+                    link={"https://www.linkedin.com/in/vishal-m-2b1616225"} />
                             <Profile image={tharushi}
                     name={"Tharushi S S"}
                     position={"Strategist"}
@@ -74,7 +75,7 @@ const About =() =>{
                     name={"Shree Bala Aadithya B"}
                     position={"Treasurer"}
                     link={"hi"} />
-                            <Profile image={bala}
+                            <Profile image={sara}
                     name={"Saravanan S"}
                     position={"Director"}
                     link={"https://www.linkedin.com/in/saravanan-s-366a8b218/"} />

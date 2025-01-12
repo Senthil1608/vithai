@@ -25,7 +25,7 @@
 }
 
 .block h1 {
-    color: rgb(117, 2, 143); /* Vibrant color for headings */
+    color: #388e3c; /* Vibrant color for headings */
     text-align: left;
     font-size: 1.5em; /* Adjusted font size for balance */
     font-family: 'Arial', sans-serif; /* Clean font style */
@@ -48,7 +48,7 @@
 }
 
 .block a {
-    color: #0078d7; /* Updated blue shade for links */
+    color: #388e3c; /* Updated blue shade for links */
     font-size: 17px;
     font-family: 'Arial', sans-serif; /* Consistent font style */
     text-align: left;
@@ -57,6 +57,6 @@
 }
 
 .block a:hover {
-    color: #0056a6; /* Darker shade on hover */
+    color:#388e3c; /* Darker shade on hover */
     text-decoration: underline; /* Underline on hover for better usability */
 }

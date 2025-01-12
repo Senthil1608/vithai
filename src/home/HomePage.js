@@ -32,7 +32,7 @@ const HomePage = () => {
       <br />
       <br />
 
-      <a href="/about"><button className="learn-more-button">Learn More</button></a>
+      <a href="/about" className="link-button">Learn More</a>
 
       {/* Vision and Mission Section */}
       <div className="vision-mission-container">
