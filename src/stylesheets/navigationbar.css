@@ -6,7 +6,7 @@
   justify-content: center;
   margin: 0; /* Remove default margin */
   position: fixed; /* Keeps the navbar fixed in place */
-  top: 50px;  /* Position below the top bar */
+  top: 20px;  /* Position below the top bar */
   left: 0;
   width: 100%;
   z-index: 1000; /* Stacks below the bar */
