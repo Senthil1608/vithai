@@ -1,5 +1,3 @@
-/* contact.css */
-
 /* Container for the Contact Us page */
 .veeradisplay {
     display: flex;
@@ -8,6 +6,7 @@
     gap: 20px;
     padding: 40px 20px;
     background-color: #f7fafc;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect for the container */
 }
 
 /* Spacing and alignment for child Contactblock components */
@@ -15,6 +14,30 @@
     flex: 1 1 calc(30% - 20px);
     width: 30%;
     height: auto;
+    position: relative; /* Needed for animations */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1.2s ease forwards; /* Slide up animation on load */
+}
+
+.veeradisplay > div:nth-child(odd) {
+    animation-delay: 0.3s; /* Staggered delay for odd blocks */
+}
+
+.veeradisplay > div:nth-child(even) {
+    animation-delay: 0.6s; /* Staggered delay for even blocks */
+}
+
+/* Hover Effects */
+.veeradisplay > div:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight lift and zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* Responsive design for smaller devices */
@@ -28,6 +51,11 @@
         flex: 1 1 100%;
         width: 80%;
     }
+
+    .veeradisplay > div {
+        animation: slideUp 1s ease forwards;
+        animation-delay: 0s; /* Remove delay on smaller devices */
+    }
 }
 
 @media (max-width: 480px) {
@@ -38,5 +66,26 @@
 
     .veeradisplay > div {
         max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

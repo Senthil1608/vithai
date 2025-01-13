@@ -1,21 +1,22 @@
-
-  
-  .gallery-container {
+.gallery-container {
     padding: 40px 20px;
     text-align: center;
     background-color: #f8f9fa;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect for the gallery */
   }
   
   .gallery-title {
     font-size: 2.5rem;
-    color:  #388e3c;
+    color: #388e3c;
     margin-bottom: 10px;
+    animation: slideInDown 1s ease-out; /* Title slides in smoothly */
   }
   
   .gallery-description {
     font-size: 1.2rem;
     color: #002608;
     margin-bottom: 30px;
+    animation: slideInUp 1s ease-out; /* Description slides in from below */
   }
   
   /* Grid Layout */
@@ -25,6 +26,7 @@
     gap: 20px;
     justify-items: center;
     align-items: center;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth appearance for the grid */
   }
   
   .gallery-item {
@@ -33,6 +35,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
   .gallery-image-wrapper {
@@ -48,10 +56,12 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
+    transform: scale(1.05); /* Slight zoom-in on load */
+    animation: zoomOutOnLoad 1.5s ease-in-out; /* Modern animation effect */
   }
   
   .gallery-item:hover .gallery-image {
-    transform: scale(1.1);
+    transform: scale(1.2);
     filter: brightness(0.7);
   }
   
@@ -80,8 +90,8 @@
     text-align: center;
   }
   
-/* Modal Styling */
-.modal {
+  /* Modal Styling */
+  .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -92,6 +102,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    animation: fadeIn 0.8s ease-out; /* Smooth modal appearance */
   }
   
   .modal-content {
@@ -105,12 +116,13 @@
   }
   
   .modal-image {
-    width: auto; /* Maintain original aspect ratio */
-    height: auto; /* Maintain original aspect ratio */
-    max-width: 100%; /* Fit within modal width */
-    max-height: 80vh; /* Fit within modal height */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
     border-radius: 10px;
-    object-fit: contain; /* Ensure no distortion */
+    object-fit: contain;
+    animation: scaleIn 0.8s ease-out; /* Modern scaling animation */
   }
   
   .modal-close {
@@ -124,33 +136,85 @@
     border-radius: 50%;
     padding: 0 8px;
     line-height: 30px;
+    transition: background 0.3s ease;
+  }
+  
+  .modal-close:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
   }
   
   .modal-text {
     margin-top: 10px;
     font-size: 1.2rem;
     color: #fff;
+    animation: fadeInUp 0.8s ease-out;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .modal-image {
-      max-width: 100%; /* Fit within smaller screens */
-      max-height: 70vh;
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
-  
-    .modal-close {
-      top: 5px;
-      right: 5px;
-      font-size: 1.5rem;
-    }
-  
-    .modal-text {
-      font-size: 1rem;
+    to {
+      opacity: 1;
     }
   }
   
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomOutOnLoad {
+    from {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
