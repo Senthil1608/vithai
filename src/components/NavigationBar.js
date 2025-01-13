@@ -32,8 +32,8 @@ const NavigationBar = () => {
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/gallery">Gallery</a></li>
           <li><a href="/contactus">Contact Us</a></li>
         </ul>
       </div>
