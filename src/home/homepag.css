@@ -151,7 +151,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  animation: fadeInUp 2s ease-out; /* Slide-up effect with smoother timing */
+ /* Slide-up effect with smoother timing */
 }
 
 @keyframes fadeInUp {
