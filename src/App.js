@@ -5,6 +5,10 @@ import About from './about/About';
 import Contactus from './contactus/Contactus';
 import Projects from './projects/Projects';
 import Gallery from './gallery/Gallery';
+import Volunteers from './volunteers/Volunteers';
+import WorkCulture from './work/WorkCulture';
+import Blogs from './blogs/Blog';
+import Events from './events/Events';
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +19,10 @@ function App() {
           <Route path="/contactus" element={ <Contactus />} />
           <Route path="/projects" element ={ <Projects />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/volunteers" element={<Volunteers />} />
+          <Route path="/work-culture" element={<WorkCulture />}/>
+          <Route path="/blogs" element={<Blogs />}/>
+          <Route path="/events" element={<Events />}/>
         </Routes>
       </div>
     </BrowserRouter>
