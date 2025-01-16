@@ -1,66 +1,90 @@
 /* Footer Styles */
 .footer {
-  background: linear-gradient(to right,#388e3c,#4a934e,#618c63); /* Gradient from left to right */
+  background: linear-gradient(to right, #00a308,#1f9825,#28922d, #4a934e, #618c63);
   color: white;
-  padding: 40px 20px;
-  text-align: center;
+  padding: 50px 20px;
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-logo {
+  text-align: center;
 }
 
 .footer-title {
   font-size: 28px;
   font-weight: bold;
-  color: #000300; /* Green color for the foundation name */
+  color: #cfced3; /* Gold color for the title */
 }
 
 .catchy-text {
-  font-size: 18px;
-  font-style: italic;
-  color: #f3f3f3;
+  font-size: 16px;
+  color: #ecf0f1;
   margin-top: 10px;
 }
 
-.footer-links {
-  margin-top: 15px;
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0d0175; /* Light orange for headings */
 }
 
-.social-icon {
-  margin: 0 15px;
-  font-size: 30px;
-  color: white;
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
+.nav-links a:hover {
+  color: #1a1fbc; /* Light green hover effect */
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  transition: color 0.1s ease;
+}
+
 .social-icon:hover {
-  color: #333533; /* Green color on hover */
+  color: #000000; /* Blue hover effect */
 }
 
 .footer-bottom {
-  margin-top: 30px;
+  text-align: center;
   font-size: 14px;
+  color: #bdc3c7;
 }
 
-.footer-bottom p {
-  margin: 0;
-}
-
-/* Responsive design for mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer-content {
-      flex-direction: column;
-  }
-
-  .social-icon {
-      margin: 10px 10px; /* Adds vertical and horizontal spacing */
-  }
-
-  .social-icon + .social-icon {
-      margin-top: 15px; /* Adds spacing between icons when stacked vertically */
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
