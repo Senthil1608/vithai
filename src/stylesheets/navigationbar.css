@@ -29,7 +29,7 @@
 
 /* Add margin-top to prevent overlapping content */
 body {
-  margin-top: 50px; /* Adjust for both the top bar and navbar height */
+  margin-top: 80px; /* Adjust for both the top bar and navbar height */
 }
 
 .navbar-title {
