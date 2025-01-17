@@ -1,0 +1,244 @@
+/* Events container */
+.events-container {
+    background-color: #ffffff;
+    margin-bottom: 4rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header section */
+.events-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+.events-header h1 {
+    font-size: 2.5rem;
+    color: #0078d4;
+    animation: colorPulse 3s infinite;
+}
+
+/* Event card styles */
+.event-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: cardPop 1.2s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout for image and content */
+.event-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+/* Event image */
+.event-image {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    animation: imagePulse 2s infinite;
+}
+
+/* Event content */
+.event-content {
+    flex: 2;
+    text-align: left;
+    animation: fadeUp 1.5s ease-in-out;
+}
+
+.event-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    animation: glowText 2s infinite;
+}
+
+.event-subtitle {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.event-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.event-details {
+    margin: 1rem 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.event-details li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    animation: fadeInItem 1s ease-in-out;
+}
+
+.event-note {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #444;
+}
+
+.event-mission, .event-limited {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Register button */
+.register-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #00721c;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: buttonGlow 1.5s infinite alternate;
+}
+
+.register-button:hover {
+    background-color: #0f4214;
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .event-layout {
+        flex-direction: column;
+    }
+
+    .event-image {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .event-content {
+        flex: 1;
+    }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardPop {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes colorPulse {
+    0% {
+        color: #0078d4;
+    }
+    50% {
+        color: #0056a6;
+    }
+    100% {
+        color: #0078d4;
+    }
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 5px #009e3a, 0 0 10px #00d412;
+    }
+    50% {
+        text-shadow: 0 0 15px #00a608, 0 0 20px #13a600;
+    }
+    100% {
+        text-shadow: 0 0 5px #00d451, 0 0 10px #00d40e;
+    }
+}
+
+@keyframes imagePulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 10px rgba(0, 122, 15, 0.5);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 20px rgba(7, 169, 31, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 0px 10px rgba(0, 212, 32, 0.5);
+    }
+}
+
+@keyframes buttonGlow {
+    0% {
+        box-shadow: 0 0 5px #00721c;
+    }
+    100% {
+        box-shadow: 0 0 15px #0f4214;
+    }
+}
+
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -100,7 +100,7 @@ const HomePage = () => {
 
       <div className="impacts animate-on-scroll">
         <Block text1="Founder’s Message" text2="Born from Passion, Fueled by Purpose" text3="What began as a spark in the mind of a budding engineering undergraduate quickly evolved into a selfless mission." text4="About"/>
-        <Block text1="Compile Plus" text2="Empowering Education, Inspiring Growth" text3="A special fundraising event with a clear mission: to offer top-tier programming workshops that promote education and mutual growth." text4="projects"/>
+        <Block text1="Compile Plus" text2="Empowering Education, Inspiring Growth" text3="A special fundraising event with a clear mission: to offer top-tier programming workshops that promote education and mutual growth." text4="events"/>
         <Block text1="Skill Up 1.0" text2="Empowering Careers through Skill and Inspiration" text3="This exciting 10-week course Featuring comprehensive placement training, along with inspiring guest lectures from industry leaders." text4="projects"/>
       </div>
       <div className="rectangle animate-on-scroll">

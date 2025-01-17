@@ -1,0 +1,128 @@
+.work-culture-container {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f3f3f3, #9e9e9e, #2c644b);
+    color: #262525;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  
+  .work-culture-content {
+    position: relative;
+ 
+    text-align: justify;
+    overflow: hidden;
+ 
+  }
+  
+  .content-wrapper {
+    width: 80%;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+    
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #030e00, #5ef301);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s infinite linear;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    color: #000000;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .animation-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .circle-animation {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: pulse 10s infinite ease-in-out;
+  }
+  
+  .circle-animation.small {
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: 20%;
+    animation-delay: 2s;
+  }
+  
+  .circle-animation:not(.small) {
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: 70%;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    50% {
+      transform: scale(1.3);
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .circle-animation:not(.small) {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .circle-animation.small {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
