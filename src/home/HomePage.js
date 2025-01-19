@@ -11,7 +11,7 @@ import edu from "../home/edu.png"; // Replace with actual image path
 import Block from "../components/Block";
 import profile from "../home/profile.png";
 import bonny from "../home/bonny.png";
-
+import NewEvents from "../components/NewEvents";
 const HomePage = () => {
 
   useEffect(() => {
@@ -56,9 +56,11 @@ const HomePage = () => {
         Creating Changes EveryDay,<br />
         Empowering Minds for Tomorrow
       </div>
-
-      <br />
-      <br />
+      <div className="animate-on-scroll">
+      <NewEvents text1="events" />
+      </div>
+  
+    
 
       <a href="/about" className="link-button animate-on-scroll">Learn More</a>
 

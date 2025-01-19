@@ -35,6 +35,7 @@ const NavigationBar = () => {
           <li><a href="/projects">Projects</a></li>
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/contactus">Contact Us</a></li>
+         
         </ul>
       </div>
     </div>

@@ -5,6 +5,7 @@ import speak from "../projects/speak.png";
 import skill from "../projects/skill.png";
 import home from "../projects/home.png";
 import "../projects/projects.css";
+import NewEvents from "../components/NewEvents";
 
 const Projects = () => {
     return (
@@ -60,6 +61,10 @@ const Projects = () => {
                         <img src={home} alt="Your House Our House" className="project-image" />
                     </div>
                 </section>
+                <section className="project-section fade-in">
+                    <NewEvents text1="events"/>
+                </section>    
+
             </main>
             <Footer />
         </div>

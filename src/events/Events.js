@@ -27,8 +27,9 @@ const Events = () => {
                                 students with essential programming skills.
                             </p>
                             <ul className="event-details">
-                                <li><strong>Duration:</strong> 3 Hours</li>
+                                <li><strong>Duration:</strong> 2 Hours</li>
                                 <li><strong>Date:</strong> January 26, 2025</li>
+                                <li><strong>Time:</strong> 3:30pm to 5:30pm</li>
                                 <li><strong>Mode:</strong> Online</li>
                                 <li><strong>Cost:</strong> Absolutely Free!</li>
                             </ul>
@@ -45,7 +46,7 @@ const Events = () => {
                             <p className="event-limited">
                                 Seats are limited, so don’t miss this opportunity!
                             </p>
-                            <a href="#register" className="register-button">Register Now</a>
+                            <a href="https://forms.gle/uBiC37rDF6J4xFG99" className="register-button">Register Now</a>
                         </div>
                     </div>
                 </section>

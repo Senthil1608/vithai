@@ -1,7 +1,7 @@
 .work-culture-container {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f3f3f3, #9e9e9e, #2c644b);
-    color: #262525;
+    /* background: linear-gradient(135deg, #f3f3f3, #9e9e9e, #2c644b); */
+    color: #ffffff;
     
     display: flex;
     flex-direction: column;
