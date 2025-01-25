@@ -62,7 +62,7 @@ const Projects = () => {
                     </div>
                 </section>
                 <section className="project-section fade-in">
-                    <NewEvents text1="events"/>
+                    <NewEvents text1="/events"/>
                 </section>    
 
             </main>

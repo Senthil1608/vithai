@@ -56,13 +56,14 @@ const HomePage = () => {
         Creating Changes EveryDay,<br />
         Empowering Minds for Tomorrow
       </div>
+      <br /><br /><br />
       <div className="animate-on-scroll">
-      <NewEvents text1="events" />
+      <a href="/about" className="link-button animate-on-scroll">Learn More</a>
       </div>
   
     
 
-      <a href="/about" className="link-button animate-on-scroll">Learn More</a>
+    
 
       {/* Vision and Mission Section */}
       <div className="vision-mission-container animate-on-scroll">
