@@ -1,8 +1,10 @@
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
-import speak from "../projects/speak.png";
-import skill from "../projects/skill.png";
+
+import compile from "../projects/compile.png";
+import speak from "../projects/speakup.png";
+import skill from "../projects/Skill Up 1.0 (2).png";
 import home from "../projects/home.png";
 import "../projects/projects.css";
 import NewEvents from "../components/NewEvents";
@@ -43,6 +45,23 @@ const Projects = () => {
                     </div>
                     <div className="image-content">
                         <img src={skill} alt="Skill Up" className="project-image" />
+                    </div>
+                </section>
+
+
+                {/* Compile Plus Section */}
+                <section className="project-section slide-in-left">
+                    <div className="text-content">
+                        <h1 className="project-title">Compile Plus - 1.0</h1>
+                        <p className="project-description">
+                        Compile Plus was an exciting and impactful initiative aimed at empowering students with essential modern-day programming skills. Focused on the fundamentals of Object-Oriented Programming (OOP) using C++, this program provided a structured and interactive learning experience. Conducted through a virtual Google Meet session, it offered an engaging two-hour knowledge transfer, ensuring participants gained a solid foundation in OOP concepts while enhancing their problem-solving abilities in a dynamic and accessible environment.
+
+                          
+                        </p>
+          
+                    </div>
+                    <div className="image-content">
+                        <img src={compile} alt="Skill Up" className="project-image" />
                     </div>
                 </section>
 

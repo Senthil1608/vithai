@@ -85,7 +85,7 @@ const About =() =>{
                     <div>
                         <h1>Willing to volunteer ? </h1>
                         <p>There's no perfect time to start making a difference. Explore our volunteer community options below and join us on the journey to create positive change.</p>
-                        <a>Join US</a>
+                        <a href="https://forms.gle/kCYsnU3jxFKwLSFh6">Join US</a>
                     </div>
                     <div>
                         <img src={photo1} ></img>
